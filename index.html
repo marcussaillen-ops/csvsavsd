@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Силуэт — студия лазерной эпиляции и коррекции фигуры</title>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%230ABAB5%22>S</text></svg>">
+
+  <link rel="stylesheet" href="src/css/style.css" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ <div class="bg-animated" aria-hidden="true">
+  <div class="floating-element element-1"></div>
+  <div class="floating-element element-2"></div>
+  <div class="floating-element element-3"></div>
+</div>
+
+  <div id="top"></div>
+
+  <header class="header" id="siteHeader">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Наверх">
+        <span class="brand__dot"></span>
+        <span class="brand__name">Силуэт</span>
+      </a>
+
+      <nav class="nav" aria-label="Главное меню">
+        <a class="nav__link" href="#lpg">Коррекция фигуры</a>
+        <a class="nav__link" href="#laser">Лазерная эпиляция</a>
+        <a class="nav__link" href="#procedures">Процедуры</a>
+        <a class="nav__link" href="#price">Прайс</a>
+        <a class="nav__link" href="#masters">Наши мастера</a>
+        <!-- <a class="nav__link" href="#before-after">До и после</a> -->
+        <a class="nav__link" href="#apparatus">Аппараты</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="btn btn--primary" href="#booking" data-booking-open>Записаться</a>
+
+        <button class="ios-theme-toggle" id="themeToggle" type="button"
+                aria-label="Переключить тему" aria-pressed="false">
+          <span class="track">
+            <span class="icons" aria-hidden="true">
+              <!-- Светлая версия -->
+              <svg class="icon sun" viewBox="0 0 24 24" fill="none">
+                <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.4 1.4M17.6 17.6 19 19M19 5l-1.4 1.4M6.4 17.6 5 19"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+
+              <!-- Темная версия -->
+              <svg class="icon moon" viewBox="0 0 24 24" fill="none">
+                <path d="M21 13.2A7.8 7.8 0 0 1 10.8 3 7.2 7.2 0 1 0 21 13.2Z"
+                      stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </span>
+
+            <span class="thumb" aria-hidden="true"></span>
+          </span>
+        </button>
+
+        <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile" id="mobileMenu" aria-hidden="true">
+      <div class="mobile__inner container">
+        <a class="mobile__link" href="#lpg">Коррекция фигуры</a>
+        <a class="mobile__link" href="#laser">Лазерная эпиляция</a>
+        <a class="mobile__link" href="#procedures">Процедуры</a>
+        <a class="mobile__link" href="#masters">Наши мастера</a>
+        <a class="mobile__link" href="#before-after">До и после</a>
+        <a class="mobile__link" href="#apparatus">Аппараты</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero__content">
+        <h1 class="hero__title">Siluet — студия лазерной эпиляции и коррекции фигуры</h1>
+        <p class="hero__text">
+          Премиальная студия лазерной эпиляции и коррекции фигуры в Севастополе.
+          Современное оборудование, бережный подход и видимый результат.
+          Помогаем подчеркнуть вашу естественную красоту.
+        </p>
+        <a class="btn btn--primary btn--icon" href="#booking" data-booking-open>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 5v14m-7-7h14"/>
+          </svg>
+          Записаться онлайн
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- ЛПГ -->
+    <section class="section" id="lpg">
+      <div class="container">
+        <h2 class="h2">Коррекция фигуры — аппаратный массаж</h2>
+        <p class="lead">Аппаратная вакуумно-роликовая процедура для коррекции фигуры: лимфодренаж, тонус и улучшение качества кожи.</p>
+
+        <div class="cards cards--3">
+          <article class="card">
+            <div class="card__inner">
+              <h3 class="card__title">Что даёт процедура</h3>
+              <ul class="list">
+                <li>Улучшает крово- и лимфообращение</li>
+                <li>Снижает отёчность и помогает уменьшить объёмы</li>
+                <li>Повышает тонус и упругость кожи</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__inner">
+              <h3 class="card__title">Рекомендации перед сеансом</h3>
+              <ul class="list">
+                <li>Соблюдение питьевого режима <strong>30гр. на 1кг. </strong>(массы тела)</li>
+                <li>Коррекция питания </li>
+                <li>Убрать из рациона <strong>быстрые углеводы</strong></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__inner">
+              <h3 class="card__title">Как усилить эффект</h3>
+              <ul class="list">
+                <li>Соблюдать регулярность курса</li>
+                <li>Добавить лёгкую активность и прогулки</li>
+                <li>Поддерживать водный режим</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Лазер эп. -->
+    <section class="section" id="laser">
+      <div class="container">
+        <h2 class="h2">Лазерная эпиляция</h2>
+        <p class="lead">Бережный способ уменьшить рост нежелательных волос за счёт воздействия на фолликул.</p>
+
+        <div class="cards cards--3">
+          <article class="card">
+            <div class="card__inner">
+              <h3 class="card__title">Что это?</h3>
+              <ul class="list">
+                <li>Лазер нагревает волосяной фолликул и ослабляет рост волос</li>
+                <li>Процедура подходит для разных зон (лицо/тело)</li>
+                <li>Эффект накапливается — нужен курс</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__inner">
+              <h3 class="card__title">Подготовка</h3>
+              <ul class="list">
+                <li>За 24–48 часов — без загара и солярия</li>
+                <li>За 2–3 недели — не выщипывать (воск/пинцет), только бритьё</li>
+                <li>За 1 день — без скрабов и агрессивных средств</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__inner">
+              <h3 class="card__title">После процедуры</h3>
+              <ul class="list">
+                <li>Увлажнение и бережный уход</li>
+                <li>Не тереть кожу и избегать горячих процедур 24–48 часов</li>
+                <li>SPF на открытых зонах (особенно лицо)</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Процедуры -->
+    <section class="section" id="procedures">
+      <div class="container">
+        <h2 class="h2">Процедуры</h2>
+        <p class="lead">Подбираем уход под запрос: коррекция фигуры, качество кожи, тонус и комфорт.</p>
+
+        <div class="cards cards--2">
+          <article class="card">
+            <div class="card__inner">
+              <h3 class="card__title">Коррекция фигуры</h3>
+              <p class="muted">Аппаратная вакуумно-роликовая коррекция фигуры.</p>
+              <ul class="list">
+                <li>Улучшает лимфодренаж и кровообращение</li>
+                <li>Снижает отёчность и объёмы</li>
+                <li>Повышает тонус и качество кожи</li>
+                <li>Устраняет жировые ловушки</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__inner">
+              <h3 class="card__title">Эпиляция</h3>
+              <p class="muted">Комфортная и аккуратная процедура для гладкой кожи.</p>
+              <ul class="list">
+                <li>Подбор зон и частоты посещений</li>
+                <li>Минимальный дискомфорт</li>
+                <li>Рекомендации по уходу после процедуры</li>
+                <li>Эффективность заметна уже после первой процедуры</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="price">
+      <div class="container">
+        <h2 class="h2">Прайс на наши услуги</h2>
+        <p class="lead">Нажмите на кнопку — прайс откроется в окне.</p>
+
+        <div class="price-actions">
+          <button class="btn btn--primary" data-price="lpg">Коррекция фигуры</button>
+          <button class="btn btn--primary" data-price="epilation">Эпиляция</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Мастера -->
+    <section class="section" id="masters">
+      <div class="container">
+        <h2 class="h2">Наши мастера</h2>
+        <p class="lead">Два специалиста — один стандарт качества и бережный подход.</p>
+
+        <div class="cards cards--2">
+          <article class="card card--media">
+            <div class="card__inner">
+              <div class="media media-square">
+                <img src="assets/inna.jpg" alt="Инна - специалист по коррекции фигуры и лазерной эпиляции" loading="lazy">
+              </div>
+              <h3 class="card__title">Инна</h3>
+              <p class="muted">Коррекция фигуры, аппаратные методики, эпиляция внимательная работа по запросу.</p>
+            </div>
+          </article>
+
+          <article class="card card--media">
+            <div class="card__inner">
+              <div class="media media-square">
+                <img src="assets/Julia.jpg" alt="Юлия - специалист по эпиляции и коррекции фигуры" loading="lazy">
+              </div>
+              <h3 class="card__title">Юлия</h3>
+              <p class="muted">Эпиляция и коррекция фигуры. Комфортно, аккуратно, гладко.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Новая секция: До и после
+    <section class="section" id="before-after">
+      <div class="container">
+        <h2 class="h2">До и после</h2>
+        <p class="lead">Результаты наших процедур: видимые изменения до и после.</p>
+
+        <div class="cards cards--2">
+          <article class="card card--media">
+            <div class="card__inner">
+              <div class="media media-square">
+                <img src="assets/before1.jpg" alt="До процедуры 1" loading="lazy">
+              </div>
+              <h3 class="card__title">До </h3>
+            </div>
+          </article>
+
+          <article class="card card--media">
+            <div class="card__inner">
+              <div class="media media-square">
+                <img src="assets/after1.jpg" alt="После процедуры 1" loading="lazy">
+              </div>
+              <h3 class="card__title">После </h3>
+            </div>
+          </article>
+
+          <article class="card card--media">
+            <div class="card__inner">
+              <div class="media media-square">
+                <img src="assets/before2.jpg" alt="До процедуры 2" loading="lazy">
+              </div>
+              <h3 class="card__title">До 2</h3>
+            </div>
+          </article>
+
+          <article class="card card--media">
+            <div class="card__inner">
+              <div class="media media-square">
+                <img src="assets/after2.jpg" alt="После процедуры 2" loading="lazy">
+              </div>
+              <h3 class="card__title">После 2</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Аппараты -->
+    <section class="section" id="apparatus">
+      <div class="container">
+        <h2 class="h2">Аппараты</h2>
+        <p class="lead">Современное и сертифицированное оборудование, которое мы используем для процедур.</p>
+
+        <div class="cards cards--3">
+          <article class="card card--media">
+            <div class="card__inner">
+              <div class="media media-square">
+                <img src="assets/apparatus1.jpg" alt="Аппарат 1" loading="lazy">
+              </div>
+              <!-- <h3 class="card__title">Аппарат</h3> -->
+            </div>
+          </article>
+
+          <article class="card card--media">
+            <div class="card__inner">
+              <div class="media media-square">
+                <img src="assets/apparatus2.jpg" alt="Аппарат 2" loading="lazy">
+              </div>
+              <!-- <h3 class="card__title">Аппарат</h3> -->
+            </div>
+          </article>
+
+          <article class="card card--media">
+            <div class="card__inner">
+              <div class="media media-square">
+                <img src="assets/apparatus3.jpg" alt="Аппарат 3" loading="lazy">
+              </div>
+              <!-- <h3 class="card__title"></h3> -->
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<!-- Отзывы наших клиентов -->
+<section id="reviews" class="section">
+  <div class="container">
+    <h2 class="h2 text-center">Отзывы наших клиентов</h2>
+    <p class="lead">
+      Что говорят клиенты о нашем салоне лазерной эпиляции и коррекции фигуры Силуэт на Яндекс Картах
+    </p>
+    
+    <!-- Блок с отзывами -->
+    <div class="cards reviews-grid">
+      <!-- Отзыв 1 -->
+      <div class="card review-card">
+        <div class="review-header">
+          <div class="review-author">
+            <div class="review-avatar">
+              <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Anna" alt="Анна">
+            </div>
+            <div class="review-author-info">
+              <h4 class="review-author-name">Анна</h4>
+              <div class="review-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-date">2 недели назад</span>
+              </div>
+            </div>
+          </div>
+          <div class="review-source">
+            <span class="yandex-badge">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8 0L10.5 5.5L16 8L10.5 10.5L8 16L5.5 10.5L0 8L5.5 5.5L8 0Z" fill="#FC3F1D"/>
+              </svg>
+              Яндекс
+            </span>
+          </div>
+        </div>
+        <div class="review-content">
+          <p>Прекрасный салон! Делала эпиляцию у мастера Инны. Очень внимательная, аккуратная, работа сделана идеально. Рекомендую!</p>
+        </div>
+        <div class="review-footer">
+          <div class="review-service">
+            <span class="service-tag">Комбенированная процедура</span>
+            <span class="service-tag">Атмосфера</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Отзыв 2 -->
+      <div class="card review-card">
+        <div class="review-header">
+          <div class="review-author">
+            <div class="review-avatar">
+              <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Maria" alt="Мария">
+            </div>
+            <div class="review-author-info">
+              <h4 class="review-author-name">Мария</h4>
+              <div class="review-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-date">3 недели назад</span>
+              </div>
+            </div>
+          </div>
+          <div class="review-source">
+            <span class="yandex-badge">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8 0L10.5 5.5L16 8L10.5 10.5L8 16L5.5 10.5L0 8L5.5 5.5L8 0Z" fill="#FC3F1D"/>
+              </svg>
+              Яндекс
+            </span>
+          </div>
+        </div>
+        <div class="review-content">
+          <p>Хожу в Силуэт уже полгода. Мастера настоящие профессионалы! Особенно нравится, как делают все качественно -  Атмосфера очень приятная, уютная.</p>
+        </div>
+        <div class="review-footer">
+          <div class="review-service">
+            <span class="service-tag">Коррекция фигуры</span>
+            <span class="service-tag">Эпиляция</span>
+            <span class="service-tag">Мастера</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Отзыв 3 -->
+      <div class="card review-card">
+        <div class="review-header">
+          <div class="review-author">
+            <div class="review-avatar">
+              <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Elena" alt="Елена">
+            </div>
+            <div class="review-author-info">
+              <h4 class="review-author-name">Елена</h4>
+              <div class="review-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-date">месяц назад</span>
+              </div>
+            </div>
+          </div>
+          <div class="review-source">
+            <span class="yandex-badge">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8 0L10.5 5.5L16 8L10.5 10.5L8 16L5.5 10.5L0 8L5.5 5.5L8 0Z" fill="#FC3F1D"/>
+              </svg>
+              Яндекс
+            </span>
+          </div>
+        </div>
+        <div class="review-content">
+          <p>Впервые попала в этот салон по рекомендации. Осталась очень довольна! Мастер Юлия - волшебница, сделала все идеально, что все подруги спрашивали. Цены адекватные, качество на высоте.</p>
+        </div>
+        <div class="review-footer">
+          <div class="review-service">
+            <span class="service-tag">Эпиляция</span>
+            <span class="service-tag">Коррекция фигуры</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Кнопка для добавления отзыва -->
+    <div class="reviews-actions">
+      <a href="https://yandex.ru/maps/org/siluet/72860898382/reviews/?add-review=true&ll=33.552912%2C44.593270&z=17" target="_blank" class="btn btn--primary">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+        </svg>
+        Оставить отзыв на Яндекс Картах
+      </a>
+      
+      <!-- Бейдж с рейтингом -->
+      <div class="yandex-rating-badge">
+        <div class="rating-score">
+          <span class="score-number">4.7</span>
+          <span class="score-text">рейтинг</span>
+        </div>
+        <div class="rating-stars-large">★★★★★</div>
+        <div class="rating-count">На основе 11 отзывов</div>
+      </div>
+    </div>
+  </div>
+
+<!-- <div class="text-center mt-4">
+  <a href="" 
+     target="_blank" 
+     class="btn btn--outline">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+      <polyline points="15 3 21 3 21 9"></polyline>
+      <line x1="10" y1="14" x2="21" y2="3"></line>
+    </svg>
+    Читать все отзывы на Яндекс
+  </a>
+</div> -->
+
+</section>
+
+    <!-- Модальное окно записи -->
+    <div class="modal" id="bookingModal" aria-hidden="true">
+      <div class="modal__backdrop" data-booking-close></div>
+
+      <div class="modal__content modal__content--form" role="dialog" aria-modal="true" aria-label="Онлайн-запись">
+        <button class="modal__close" type="button" aria-label="Закрыть" data-booking-close>✕</button>
+
+        <h3 class="modal__title">Онлайн-запись</h3>
+        <p class="modal__subtitle">Оставьте заявку — мы свяжемся с вами и подберём удобное время.</p>
+
+        <form class="form form--modal" id="bookingFormModal">
+          <div class="form-grid">
+            <label class="field">
+              <span class="field__label">Ваше имя</span>
+              <input class="input" name="name" type="text" placeholder="Имя" required />
+            </label>
+
+            <label class="field">
+              <span class="field__label">Телефон</span>
+              <input class="input" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required />
+            </label>
+
+            <label class="field">
+              <span class="field__label">Дата</span>
+              <input class="input" name="date" type="text" placeholder="ДД.ММ.ГГГГ" required />
+            </label>
+
+            <label class="field">
+              <span class="field__label">Процедура</span>
+              <select class="input" name="service" required>
+                <option value="">Выберите процедуру</option>
+                <option value="Лазерная эпиляция">Лазерная эпиляция</option>
+                <option value="LPG-массаж">Коррекция фигуры</option>
+                <option value="Консультация">Консультация специалиста</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span class="field__label">Время</span>
+              <select class="input" name="time" required>
+                <option value="">Выберите время</option>
+                <option value="9-12">Утро (9:00 - 12:00)</option>
+                <option value="12-15">День (12:00 - 15:00)</option>
+                <option value="15-18">Вечер (15:00 - 17:00)</option>
+                <option value="18-20">Поздний вечер (17:00 - 19:00)</option>
+              </select>
+            </label>
+
+            <label class="field field--full">
+              <span class="field__label">Комментарий (необязательно)</span>
+              <textarea class="input" name="comment" rows="3" placeholder="Ваши пожелания..."></textarea>
+            </label>
+          </div>
+
+          <button class="btn btn--primary btn--wide" type="submit">Отправить заявку</button>
+          <p class="hint" id="formHintModal" aria-live="polite"></p>
+          <p class="footer__text" style="margin-top: 12px; font-size: 12px; opacity: 0.7;">
+            Нажимая кнопку, вы соглашаетесь с <a href="#policy" class="link">политикой конфиденциальности</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <div class="footer__brand">
+          <span class="brand__dot"></span>
+          <span class="footer__name">Силуэт</span>
+        </div>
+
+        <p class="footer__text">
+          Студия аппаратной косметологии и лазерной эпиляции.
+        </p>
+
+        <div class="footer__block">
+          <h4 class="footer__title">Контакты:</h4>
+          <div class="footer__links">
+            <a class="footer__link" href="tel:+79787420804">+7 (978) 742-08-04</a>
+            <a class="footer__link" href="tel:+79788118994">+7 (978) 811-89-94</a>
+          </div>
+        </div>
+
+        <div class="footer__block">
+          <h4 class="footer__title">Адрес:</h4>
+          <p class="footer__text">
+            г. Севастополь, пр-т. Победы, дом 1А.
+          </p>
+          <p class="footer__text">
+            <span class="footer__badge"><strong>Ежедневно</strong></span> <strong>09:00 — 20:00</strong>
+          </p>
+        </div>
+      </div>
+
+      <div class="map">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?ll=33.552911%2C44.593270&z=17&pt=33.552911%2C44.593270,pm2rdm"
+          loading="lazy"
+          allowfullscreen="true"
+          style="border:0;"
+          aria-label="Яндекс.Карта: Севастополь, проспект Победы 1А"></iframe>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> 2026 Силуэт. Все права защищены.</span>
+    </div>
+  </footer>
+
+  <!-- Modal for price images -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__content" role="dialog" aria-modal="true" aria-label="Прайс">
+      <button class="modal__close" type="button" aria-label="Закрыть" data-close>✕</button>
+      <img id="modalImg" alt="Прайс" />
+    </div>
+  </div>
+
+  <button class="to-top" id="toTop" aria-label="Наверх">↑</button>
+
+  <script src="src/js/script.js"></script>
+</body>
+</html>
